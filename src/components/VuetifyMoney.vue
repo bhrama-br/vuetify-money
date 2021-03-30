@@ -19,7 +19,11 @@
       v-bind="properties"
       v-on:keypress="keyPress"
       v-on:blur="onBlur"
-    ></v-text-field>
+    >
+      <slot name="prepend-inner">
+      
+      </slot>
+    </v-text-field>
   </div>
 </template>
 
